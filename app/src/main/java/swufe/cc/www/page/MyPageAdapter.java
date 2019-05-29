@@ -7,11 +7,9 @@ import android.support.v4.app.FragmentPagerAdapter;
 
 public class MyPageAdapter extends FragmentPagerAdapter {
 
-    private String[] title = new String[]{"Fisrt","Second","Third"};
+    private String[] title = new String[]{"桔梗","雏菊","使君子"};
 
-    public MyPageAdapter(FragmentManager manager){
-        super(manager);
-    }
+    public MyPageAdapter(FragmentManager manager){ super(manager); }
 
     @Override
     public Fragment getItem(int position) {
@@ -25,9 +23,7 @@ public class MyPageAdapter extends FragmentPagerAdapter {
     }
 
     @Override
-    public CharSequence getPageTitle(int position) {
-        return title[position];
-    }
+    public CharSequence getPageTitle(int position) { return title[position]; }
 
     @Override
     public int getCount() {
